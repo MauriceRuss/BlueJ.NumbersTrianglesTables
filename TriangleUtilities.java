@@ -3,19 +3,37 @@
 public class TriangleUtilities {
 
     public static String getRow(int numberOfStars) {
-        return null;
+        String w = "";
+        for(int q = 0; q < numberOfStars;q++){
+        w += "*";
+        
+        }
+        return w;
     }
     
     public static String getTriangle(int numberOfRows) {
-        return null;
+        String r = "";
+        for(int q = 0; q < numberOfRows;q++){
+        r += getRow(q) + "*\n" ;
+        }
+        
+        return r;
     }
 
 
     public static String getSmallTriangle() {
-        return null;
+        String b = "";
+        for(int q = 0; q < 4;q++){
+       b += getRow(q) + "*\n" ;
+        }
+        return b;
     }
 
     public static String getLargeTriangle() {
-        return null;
+        String m = "";
+         for(int q = 0; q < 9;q++){
+       m += getRow(q) + "*\n" ;
+        }
+        return m;
     }
 }
